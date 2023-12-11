@@ -460,7 +460,6 @@ footer {
 .email-address,
 .telephone-number {
   font-family: var(--ff-roman);
-
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1rem;
@@ -608,7 +607,6 @@ footer {
     display: inline-block;
     vertical-align: middle;
     margin-inline: 10px;
-    /* height: auto; /
   }
 
   /* 3. About */
@@ -720,6 +718,7 @@ footer {
   }
 
   /* 5. Contact */
+
   .contact-arrow {
     margin-left: -9.5rem;
     margin-top: 3.5rem;
