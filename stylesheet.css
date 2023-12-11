@@ -1,0 +1,873 @@
+@import url("https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap");
+
+@font-face {
+  font-family: NeueHaasRegular;
+  src: url(/additional-files/neuehaasdisplaymediu-webfont.woff);
+}
+
+@font-face {
+  font-family: NeueHaasLight;
+  src: url(/additional-files/neuehaasdisplaylight-webfont.woff);
+}
+
+@font-face {
+  font-family: NeueHaasBold;
+  src: url(/additional-files/neuehaasdisplaybold-webfont.woff);
+}
+
+@font-face {
+  font-family: NeueHaasRoman;
+  src: url(/additional-files/neuehaasdisplayroman-webfont.woff);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --header-color: #484453;
+  --font-col-dark-purp: #3b3859;
+  --font-col-purp: #543a6e;
+  --style-col-1: #fcc87d;
+  --ff-regular: NeueHaasRegular;
+  --ff-light: NeueHaasLight;
+  --ff-bold: NeueHaasBold;
+  --ff-roman: NeueHaasRoman;
+  --ff-stylized: Bilbo Swash Caps;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--header-color);
+  max-width: 360px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-regular);
+  color: var(--header-color);
+}
+
+p {
+  font-family: var(--ff-light);
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: var(--ff-regular);
+  font-size: 1rem;
+  color: var(--font-col-grey);
+}
+
+img {
+  width: 100%;
+  max-width: max-content;
+  display: block;
+}
+
+/* 0. Section */
+section,
+footer {
+  max-width: 360px;
+  margin-inline: 36px;
+  overflow-x: clip;
+  margin-top: 80px;
+}
+
+.section-header-container {
+  height: 12.5rem;
+}
+
+.section-header {
+  font-size: 3.1rem;
+  text-transform: uppercase;
+  line-height: 2.8rem;
+  font-family: var(--ff-bold);
+  position: relative;
+}
+
+.section-arrow {
+  position: absolute;
+  height: 8.5rem;
+  width: 8.5rem;
+  left: 5.6rem;
+  top: 4.4rem;
+}
+
+/* 1. Navbar */
+nav {
+  margin-inline: 36px;
+  min-height: 8rem;
+  margin-top: 70px;
+  position: relative;
+  max-width: 360px;
+}
+
+.nav-header-container {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  overflow: clip;
+  min-height: 8.5rem;
+}
+
+.nav-header-disappear {
+  visibility: hidden;
+}
+
+.nav-header {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 2.4rem;
+  font-family: var(--ff-bold);
+}
+
+.nav-arrow,
+.nav-arrow-large {
+  position: absolute;
+  top: 2.9rem;
+  left: 10rem;
+  height: 4.85rem;
+  width: 4.85rem;
+}
+
+.nav-arrow-large {
+  display: none;
+}
+
+.nav-open-btn {
+  margin-top: 0.1rem;
+}
+
+.design-blog-btn {
+  display: none;
+}
+
+.navbar-container {
+  border: 1.5px solid #4d4d4d;
+  border-radius: 5px;
+  grid-template-columns: 1fr max-content;
+  min-height: 8.5rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: none;
+}
+
+.navbar-reveal {
+  display: grid;
+}
+
+.navbar-links {
+  margin-left: 12px;
+  margin-top: 12px;
+}
+
+.navbar-link {
+  font-family: var(--ff-regular);
+  text-transform: capitalize;
+  padding-inline: 10px;
+  padding-block: 6px;
+  border-radius: 5px;
+  display: block;
+  font-size: 0.8rem;
+  margin-right: 8px;
+}
+
+.navbar-link:hover {
+  background-color: rgba(255, 226, 185, 0.4);
+}
+
+.nav-close-btn {
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+/* 2. Cards */
+.cards-section {
+  margin-top: 26px;
+  margin-inline: 36px;
+  max-width: 360px;
+}
+
+.owl-carousel.off {
+  display: block;
+}
+
+.card-container {
+  padding: 24px;
+  border-radius: 5px;
+  border: 1.2px solid #484453;
+  margin-bottom: 18px;
+  max-width: 300px;
+}
+
+.card-container > * {
+  margin-bottom: 16px;
+}
+
+.card-description {
+  font-family: var(--ff-light);
+  font-weight: bold;
+  opacity: 90%;
+}
+
+.card-name {
+  font-family: var(--ff-regular);
+  /* font-weight: bold; */
+}
+
+.card-buttons-container {
+  margin-bottom: -15px;
+}
+
+.card-btn {
+  background: none;
+  border: 1.2px solid #484453;
+  font-family: var(--ff-regular);
+  padding-inline: 22px;
+  height: 33px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 25px;
+  margin: auto 4px 8px auto;
+  font-size: 0.7rem;
+  color: #484453;
+  font-weight: bold;
+}
+
+.small-card-container {
+  max-width: 270px;
+  margin: auto;
+  margin-bottom: 18px;
+}
+
+.card-btn-link {
+  background: #fcc87da8;
+  padding-inline: 8.5px;
+  display: inline-flex;
+}
+
+/* 3. About */
+.about-section {
+  margin-top: 80px;
+}
+
+.about-1 {
+  background: url("/images/who-am-i-background.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 55% 100%;
+}
+
+.about-1-title {
+  font-size: 1.65rem;
+  color: rgba(72, 68, 83, 1);
+  margin-bottom: -0.25rem;
+}
+
+.about-1-image {
+  width: max-content;
+}
+
+.about-1-paragraph {
+  width: 13rem;
+  font-size: 0.93rem;
+  margin-bottom: 2rem;
+  line-height: 17px;
+}
+
+.about-info > p:not(.about-2-title-number) {
+  font-family: var(--ff-light);
+}
+
+.about-2 {
+  background: url("/images/Rectangle\ 575.png");
+  background-repeat: no-repeat;
+  background-size: 60% 100%;
+  background-position: 0% 100%;
+  margin-top: 5rem;
+}
+
+.about-2-title-number {
+  font-size: 2.37rem;
+  position: absolute;
+  margin-left: 2.5rem;
+  margin-top: -0.3rem;
+  font-family: var(--ff-bold);
+}
+
+.about-2-title,
+.about-2-paragraph {
+  margin-left: 30%;
+}
+
+.about-2-title {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
+
+.about-2-paragraph {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 15px;
+  font-size: 0.687rem;
+  color: rgba(95, 97, 112, 1);
+}
+
+/* 4. Resume */
+.resume-section {
+  margin-top: 80px;
+}
+
+.education-skills {
+  color: rgba(72, 68, 83, 1);
+}
+
+.ed-skills-entry {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 2.5rem;
+}
+
+.ed-skills-entry-number {
+  font-size: 1.875rem;
+  position: absolute;
+  width: 5rem;
+  top: -0.2rem;
+  left: 0.5rem;
+}
+
+.ed-skills-entry > div,
+p {
+  font-family: var(--ff-regular);
+}
+
+.ed-skills-info {
+  margin-left: 15%;
+}
+
+.ed-skills-info-title {
+  font-size: 0.82rem;
+  margin-bottom: 0.6rem;
+  text-transform: capitalize;
+}
+
+.ed-skills-info-subtitle {
+  font-size: 0.82rem;
+  margin-bottom: 0.75rem;
+}
+
+.ed-skills-info-item {
+  font-size: 0.82rem;
+  line-height: 1.1rem;
+  color: rgba(95, 97, 112, 1);
+  font-family: var(--ff-light);
+  margin-block: 0.3rem;
+}
+
+.timeline {
+  max-width: 88%;
+  margin: auto;
+  margin-top: 3rem;
+  color: rgba(72, 68, 83, 1);
+}
+
+.timeline-header {
+  font-size: 1.2rem;
+  font-family: var(--ff-regular);
+  margin-bottom: 1.5rem;
+}
+
+.timeline-container {
+  background: url("./images/my-timeline-background.png");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-position: 0% 100%;
+}
+
+.timeline-entry {
+  display: grid;
+  grid-template-columns: 30% 45% 15%;
+  gap: 5%;
+  margin-bottom: 3rem;
+  font-family: var(--ff-regular);
+}
+
+.timeline-entry > div,
+p {
+  /* T Check - Should fonts be regular or bold? */
+  font-family: var(--ff-regular);
+  /* T Check - Should fonts be regular or bold? */
+  font-size: 0.8rem;
+}
+
+.job-info-title {
+  font-family: var(--ff-light);
+}
+
+.timeline-entry-location {
+  text-align: left;
+}
+
+.timeline-background-rls {
+  display: none;
+}
+
+/* 5. Contact */
+.contact-arrow {
+  margin-top: -2rem;
+}
+
+/* Contact imported */
+footer {
+  margin-bottom: 4rem;
+  color: #484453;
+  margin-top: 80px;
+}
+
+.contact-title {
+  max-width: 12rem;
+}
+
+.contact-details {
+  width: max-content;
+  margin-left: auto;
+  margin-right: 1.1rem;
+}
+
+.social-media-icons > span > a {
+  font-size: 2rem;
+  margin-right: 0.3rem;
+}
+
+.email-address,
+.telephone-number {
+  font-family: var(--ff-roman);
+  /* font-family: var(--ff-light); */
+  font-size: 1.1rem;
+  font-weight: 500;
+  /* margin-block: -1rem; */
+  line-height: 1rem;
+  color: #543a6e;
+  /* background: red; */
+}
+
+.email-address {
+  margin-top: 1rem;
+  display: block;
+  /* background: pink; */
+}
+
+.telephone-number {
+  margin-top: 0.5rem;
+}
+
+.footer-img-container {
+  display: none;
+}
+
+/* Contact imported */
+.homepage-btn-container {
+  margin-top: 80px;
+  max-width: 360px;
+  margin-inline: 36px;
+  overflow: clip;
+  margin-bottom: 3rem;
+}
+
+.ext-btn {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  background: #fddba9;
+  height: 37px;
+  padding-inline: 26px;
+  border: 1.2px solid #484453;
+  font-family: var(--ff-regular);
+  text-transform: capitalize;
+  border-radius: 15px;
+  color: #484453;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.design-blog-btn {
+  display: none;
+}
+
+.homepage-arrow {
+  margin-right: 0.3rem;
+}
+
+@-moz-document url-prefix() {
+  .ext-btn {
+    font-family: var(--ff-roman);
+  }
+}
+
+/* Breakpoints */
+@media (width >= 691px) {
+  body {
+    max-width: 1280px;
+  }
+
+  /* 0. Section */
+  /* T Check - Should sections adjust sooner? */
+  .section-header-container {
+    height: 9rem;
+  }
+
+  .section-header {
+    font-size: 3.5rem;
+    line-height: 3.2rem;
+  }
+
+  .section-arrow {
+    height: 6rem;
+    width: 6rem;
+    left: 16rem;
+    top: 0;
+  }
+
+  .resume-arrow {
+    margin-left: 3rem;
+  }
+
+  /* T Check - Should sections adjust sooner? */
+
+  /* 1. Navbar */
+  nav,
+  .contact-section,
+  .about-section,
+  .resume-section {
+    max-width: 620px;
+    width: 620px;
+    margin-inline: auto;
+    padding-inline: 10px;
+  }
+
+  .homepage-btn-container {
+    max-width: 620px;
+    width: 620px;
+  }
+
+  .nav-header {
+    font-size: 3.8rem;
+    line-height: 3.1rem;
+  }
+
+  #nav-header-break-2 {
+    display: none;
+  }
+
+  .nav-arrow {
+    display: none;
+  }
+
+  .nav-arrow-large {
+    display: inline-block;
+    top: 0.2rem;
+    left: 25rem;
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .navbar-container {
+    width: 98%;
+  }
+
+  /* 2. Cards */
+  .cards-section {
+    max-width: 620px;
+    width: 620px;
+    margin: auto;
+    margin-top: 26px;
+  }
+
+  .card-container {
+    width: 300px;
+    max-width: 300px;
+    height: max-content;
+    max-height: max-content;
+    top: 50%;
+  }
+
+  .slick-initialized .slick-slide {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-inline: 10px;
+    /* height: auto; */
+  }
+
+  /* 3. About */
+  .about-info-container {
+    max-width: 320px;
+    width: 320px;
+  }
+
+  /* T Check - Should the fonts adjust sooner?  */
+  .about-1-title {
+    font-size: 2rem;
+  }
+
+  .about-1-paragraph {
+    max-width: 250px;
+    width: 240px;
+    font-size: 1.15rem;
+    line-height: 27px;
+    font-family: var(--ff-light);
+  }
+
+  .about-2-title-number {
+    font-size: 3rem;
+    line-height: 3.8rem;
+    margin-left: 2.6rem;
+  }
+
+  .about-2-title {
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+  }
+
+  .about-2-paragraph {
+    font-size: 0.9rem;
+    line-height: 23.8px;
+    width: 260px;
+    max-width: 270px;
+  }
+
+  #a2tn-adjust {
+    margin-top: 0.9rem;
+  }
+
+  #a2t-adjust {
+    padding-top: 1.5rem;
+  }
+
+  .wc-case-study-img {
+    display: block;
+  }
+
+  /* T Check - Should the fonts adjust sooner? */
+
+  /* 4. Resume */
+  .resume-header-title {
+    line-height: 3.4rem;
+    width: 17rem;
+  }
+
+  .ed-skills-entry {
+    max-width: 630px;
+    margin: 0;
+    margin-bottom: 4rem;
+    margin: 0 0 4rem 0.4rem;
+  }
+
+  .ed-skills-entry-number {
+    font-size: 3rem;
+    top: -0.3rem;
+    left: -0.5rem;
+  }
+
+  .ed-skills-info {
+    margin-left: 3rem;
+  }
+
+  .ed-skills-info > p {
+    font-size: 1rem;
+    line-height: 22px;
+  }
+
+  .timeline {
+    max-width: 630px;
+  }
+
+  .timeline-container {
+    background-size: 32.3% 100%;
+    background-position: 0% 100%;
+  }
+
+  .timeline-header {
+    font-size: 2.25rem;
+  }
+
+  .timeline-entry {
+    width: 630px;
+    max-width: 630px;
+    grid-template-columns: 35% 35% 15%;
+    margin-bottom: 3.7rem;
+  }
+
+  .timeline-entry-date,
+  .timeline-entry-location,
+  .job-info-company,
+  .job-info-title {
+    font-size: 1rem;
+  }
+
+  .timeline-entry-date {
+    text-align: right;
+    margin-right: 2rem;
+  }
+
+  /* 5. Contact */
+
+  .contact-arrow {
+    /* background: red; */
+    margin-left: -9.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .contact-details {
+    margin-left: 5.3rem;
+    margin-top: 1rem;
+  }
+
+  .social-media-icons > span > a {
+    font-size: 2.2rem;
+    margin: 0;
+    margin-top: -2.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .email-address,
+  .telephone-number {
+    font-size: 1.25rem;
+  }
+}
+
+@media (width >= 1043px) {
+  .section-header-container {
+    height: 9rem;
+  }
+
+  .section-header {
+    font-size: 3.5rem;
+    line-height: 3.2rem;
+  }
+
+  .section-arrow {
+    height: 6rem;
+    width: 6rem;
+    left: 16rem;
+    top: 0;
+  }
+
+  /* 1.Navbar / 2. Cards */
+  nav,
+  .cards-section,
+  .contact-section,
+  .about-section,
+  .resume-section {
+    max-width: 955px;
+    width: 955px;
+  }
+
+  .nav-open-btn {
+    display: none;
+  }
+
+  .design-blog-btn {
+    display: flex;
+  }
+
+  /* 3. About */
+  .about-info-container {
+    display: grid;
+    grid-template-columns: 400px 330px;
+    width: 750px;
+  }
+
+  .about-arrow {
+    margin-right: 8rem;
+  }
+
+  .about-1 {
+    background-position: 100% 0%;
+    background-size: 63% 94%;
+    max-width: 820px;
+    width: 420px;
+  }
+
+  .about-2 {
+    margin-top: 0;
+    background: none;
+    transform: translateX(-4.5rem);
+  }
+
+  .about-2-title-number:nth-child(1) {
+    margin-left: 3.2rem;
+  }
+
+  #a2tn-adjust {
+    margin-top: 0.9rem;
+  }
+
+  #a2t-adjust {
+    padding-top: 1.5rem;
+  }
+
+  /* 4. Resume */
+  .resume-arrow {
+    margin-left: 2.4rem;
+  }
+
+  .ed-skills-info-descript > * {
+    max-width: 17.5rem;
+    font-size: 1rem;
+  }
+
+  .timeline {
+    margin: 0;
+  }
+
+  .timeline-container {
+    background-size: 31% 100%;
+    background-position: 0% 100%;
+  }
+
+  .timeline-background-rls {
+    display: inline-block;
+  }
+}
+
+@media (width >= 1217px) {
+  /* 1.Navbar / 2. Cards */
+  nav,
+  .cards-section {
+    max-width: 1200px;
+    width: 1200px;
+  }
+
+  /* 3. About */
+  .about-section,
+  .resume-section,
+  .contact-section {
+    max-width: 705px;
+    width: 705px;
+    margin-left: 26%;
+  }
+}

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="./stylesheet.css" />
+
+    <title>Tui Lucking</title>
+  </head>
+  <body>
+    <!-- 1. Navbar -->
+    <nav>
+      <div class="nav-header-container">
+        <h1 class="nav-header">
+          Here is my<br />
+          design <br id="nav-header-break-2" />
+          work
+          <img
+            src="./images/Nav arrow.svg"
+            alt="A rounded orange arrow pointing down to indicate the designer's work"
+            class="nav-arrow"
+          />
+          <img
+            src="./images/Nav arrow large.svg"
+            alt="A rounded orange arrow pointing down to indicate the designer's work"
+            class="nav-arrow-large"
+          />
+        </h1>
+        <img
+          src="./images/Nav open button.svg"
+          alt="A button to open the navigation links"
+          class="nav-open-btn"
+        />
+        <a href="./blog/blog.html" class="ext-btn design-blog-btn">My design blog</a>
+      </div>
+
+      <div class="navbar-container">
+        <ul class="navbar-links">
+          <li class="navbar-link-container">
+            <a href="./blog/blog.html" class="navbar-link">My design blog</a>
+          </li>
+          <li class="navbar-link-container">
+            <a href="#about-section" class="navbar-link">About me</a>
+          </li>
+          <li class="navbar-link-container">
+            <a href="#resume-section" class="navbar-link">My resume</a>
+          </li>
+          <li class="navbar-link-container">
+            <a href="#contact-section" class="navbar-link">Contact me</a>
+          </li>
+        </ul>
+        <img
+          src="./images/Nav close button.svg"
+          alt="A button to close the navigation links"
+          class="nav-close-btn"
+        />
+      </div>
+    </nav>
+
+    <main>
+      <!-- 2. Cards -->
+      <section class="cards-section">
+        <div id="cards-container" class="slider">
+          <div class="card-container big-card-container">
+            <img
+              src="./images/card-img-1.jpg"
+              alt=""
+              class="card-image big-card-image"
+            />
+            <p class="card-description">
+              <span class="card-name">Sum-News</span> is an app to curate the
+              news for the user and provide brief summery of them in a
+              digestable way.
+            </p>
+            <div class="card-buttons-container">
+              <a href="./designs/sum-news-case-study.html" target="_blank" class="card-btn">UX case Study</a>
+              <a href="./designs/sum-news-ui.html" target="_blank" class="card-btn">UI design</a>
+              <a href="" class="card-btn">Prototyping</a>
+            </div>
+          </div>
+
+          <div class="card-container small-card-container">
+            <img
+              src="./images/card-img-2.jpg"
+              alt=""
+              class="card-image small-card-image"
+            />
+            <p class="card-description">
+              It is a portfolio website for a frontend developer. It's UI is
+              Modern, clean and easy to navigate.
+            </p>
+            <div class="card-buttons-container">
+              <a href="./designs/developer-website.html" target="_blank" class="card-btn">Website design</a>
+              <a href="https://www.chrislucking.co.uk" rel="noopener noreferrer" class="card-btn card-btn-link">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="card-container big-card-container">
+            <img
+              src="./images/card-img-3.jpg"
+              alt=""
+              class="card-image big-card-image"
+            />
+            <p class="card-description">
+              <span class="card-name"> Wildcamper</span> is an app for outdoor
+              lovers and campers. It has so many features to assist user before
+              and during the experience.
+            </p>
+            <div class="card-buttons-container">
+              <a href="./designs/wild-camper-case-study.html" target="_blank" class="card-btn">UX case Study</a>
+              <a href="./designs/wild-camper-ui.html" target="_blank" class="card-btn">UI design</a>
+              <a href="" class="card-btn">Prototyping</a>
+            </div>
+          </div>
+
+          <div class="card-container small-card-container">
+            <img
+              src="./images/card-img-4.jpg"
+              alt=""
+              class="card-image small-card-image"
+            />
+            <p class="card-description">
+              <span class="card-name">New Leaf</span> is a website for a tree
+              charity organization that is hoping to save the forests of Great
+              Britain.
+            </p>
+            <div class="card-buttons-container">
+              <a href="./designs/newleaf.html" target="_blank" class="card-btn">Website design</a>
+              <a href="https://www.chrislucking.co.uk/nl/index.html" rel="noopener noreferrer" class="card-btn card-btn-link">
+                <i class="fa-solid fa-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. About -->
+      <section class="about-section" id="about-section">
+        <div class="section-header-container">
+          <h2 class="section-header about-header">
+            Here is <br />
+            about me
+            <img
+              src="./images/section-arrow.svg"
+              alt="A curved orange arrow pointing down to indicate that the content is below"
+              class="section-arrow about-arrow"
+            />
+          </h2>
+        </div>
+
+        <div class="about-info-container">
+          <article class="about-1 about-info">
+            <h3 class="about-1-title">Who am I?</h3>
+            <img
+              src="/images/tui-ux-ui-designer.png"
+              alt="UX and UI designer Tui Lucking"
+              class="about-1-image"
+            />
+
+            <p class="about-1-paragraph">
+              l am a mountain biker, neuroscience enthusiast, and more recently
+              a novice digital product designer. My goal now is being a one-stop
+              creative person who converts good ideas into good products.
+            </p>
+
+            <p class="about-1-paragraph">
+              After 12 years of experience in the social sciences, research and
+              education sector, I wanted to shift my career and flourish as a
+              product designer. I am super excited to learn, grow, design and
+              adapt to the changes in tech.
+            </p>
+          </article>
+
+          <article class="about-2 about-info">
+            <p class="about-2-title-number">1/</p>
+            <h3 class="about-2-title">
+              Why did I choose to be a product designer?
+            </h3>
+
+            <p class="about-2-paragraph">
+              Throughout my life, whenever I have encountered a product that has
+              disappointed me in some way, I have often found myself asking "Who
+              designed this?" Conversely, whenever I have come across a product
+              that has consistently pleased me, I have been left wondering about
+              the intelligence behind it. After learning about digital product
+              design, I realised that I was meant to be part of this field, and
+              my journey in it began.
+            </p>
+
+            <p class="about-2-title-number" id="a2tn-adjust">2/</p>
+            <h3 class="about-2-title" id="a2t-adjust">
+              My personality and work ethic
+            </h3>
+
+            <p class="about-2-paragraph">
+              My work is an extension of me! I have a strong sense of
+              meticulousness. Undone, imprecise, and flimsy works deeply disturb
+              me. I dislike networking, because real relationships can be built
+              on compatibility and mutual values. I try to get more competent
+              every day by learning, instead of faking it until making it.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 4. Resume -->
+      <section class="resume-section" id="resume-section">
+        <div class="section-header-container">
+          <h2 class="section-header resume-header">
+            Here is <br />
+            my resume
+            <img
+              src="./images/section-arrow.svg"
+              alt="A curved orange arrow pointing down to indicate that the content is below"
+              class="section-arrow resume-arrow"
+            />
+          </h2>
+        </div>
+
+        <div class="resume--rls">
+          <article class="education-skills">
+            <div class="ed-skills-entry">
+              <p class="ed-skills-entry-number">1/</p>
+              <div class="ed-skills-info">
+                <p class="ed-skills-info-title">Design tools and skills</p>
+                <p class="ed-skills-info-subtitle">
+                  I mostly use Figma, Webflow, Miro, AdobeXD, Adobe Illustrator
+                  and PS in digital product design practices.
+                </p>
+                <p class="ed-skills-info-item">
+                  I confidently apply all steps of product design process such
+                  as research, user demographic, ideation, wireframing,
+                  prototyping and user testing. I am particularly knowledgeable
+                  about the research phase due to my sociology career. I am
+                  familiar with working with developers as well.
+                </p>
+              </div>
+            </div>
+
+            <div class="ed-skills-entry">
+              <p class="ed-skills-entry-number">2/</p>
+              <div class="ed-skills-info">
+                <p class="ed-skills-info-title">Language skills</p>
+                <div class="ed-skills-info-descript">
+                  <p class="ed-skills-info-item">English - Nativelike</p>
+                  <p class="ed-skills-info-item">Turkish - Native</p>
+                  <p class="ed-skills-info-item">Spanish - Intermediate</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ed-skills-entry">
+              <p class="ed-skills-entry-number">3/</p>
+              <div class="ed-skills-info">
+                <p class="ed-skills-info-title">Education</p>
+                <div class="ed-skills-info-descript">
+                  <p class="ed-skills-info-item">
+                    Selçuk University - Art Academy <br />
+                    (2001-2003)
+                  </p>
+                  <p class="ed-skills-info-item">
+                    AÜ - Sociology Bachelor's <br />
+                    Degree (2007)
+                  </p>
+                  <p class="ed-skills-info-item">
+                    UCLan - Sociology Master's <br />
+                    Degree (2009)
+                  </p>
+                  <p class="ed-skills-info-item">
+                    UX Design Certificate - <br />
+                    Google (2022)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline">
+            <h2 class="timeline-header">My Timeline</h2>
+
+            <div class="timeline-container">
+              <div class="timeline-entry">
+                <p class="timeline-entry-date">2020 - 2023</p>
+                <div class="timeline-entry-job-info job-info">
+                  <p class="job-info-company">GoStudent</p>
+                  <p class="job-info-title">English teacher</p>
+                </div>
+                <p class="timeline-entry-location">Remote</p>
+              </div>
+
+              <div class="timeline-entry">
+                <p class="timeline-entry-date">2014 - 2019</p>
+                <div class="timeline-entry-job-info job-info">
+                  <p class="job-info-company">
+                    Universidad Internacional Menéndez Pelayo
+                  </p>
+                  <p class="job-info-title">CP / English tutor</p>
+                </div>
+                <p class="timeline-entry-location">/Spain</p>
+              </div>
+
+              <div class="timeline-entry">
+                <p class="timeline-entry-date">2011 - 2013</p>
+                <div class="timeline-entry-job-info job-info">
+                  <p class="job-info-company">YMCA</p>
+                  <p class="job-info-title">
+                    Social Worker and assistant researcher
+                  </p>
+                </div>
+                <p class="timeline-entry-location">/England</p>
+              </div>
+
+              <div class="timeline-entry">
+                <p class="timeline-entry-date">2008 - 2010</p>
+                <div class="timeline-entry-job-info job-info">
+                  <p class="job-info-company">Basaksehir Vocational College</p>
+                  <p class="job-info-title">Sociology teacher</p>
+                </div>
+                <p class="timeline-entry-location">/Turkey</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contact-section" id="contact-section">
+      <div class="section-header-container">
+        <h2 class="section-header contact-header">
+          Contact <br />
+          me
+          <img
+            src="./images/section-arrow.svg"
+            alt="A curved orange arrow pointing down to indicate that the content is below"
+            class="section-arrow contact-arrow"
+          />
+        </h2>
+      </div>
+
+          <div class="contact-details">
+          <div class="social-media-icons">
+            <span
+              ><a href="https://www.behance.net/tubalucking" target="blank" rel="noopener noreferrer" 
+                ><i class="fa-brands fa-behance"></i></a
+            ></span>
+            <span>
+              <a href="https://www.linkedin.com/in/tu%C4%9Fba-lucking-97b126255/" target="blank" rel="noopener noreferrer" ><i class="fa-brands fa-linkedin"></i></a
+            ></span>
+            <span>
+              <a href="https://twitter.com/tuilucking" target="blank" rel="noopener noreferrer" 
+                ><i class="fa-brands fa-square-twitter"></i></a
+            ></span>
+          </div>
+
+          <a href="mailto:webmaster@example.com" class="email-address"
+            >tugba.lucking@hotmail.co.uk</a
+          >
+
+          <p class="telephone-number">0090-5435849460</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <div class="homepage-btn-container">
+      <a href="#" class="ext-btn homepage-btn">
+        <i class="fa-solid fa-arrow-left-long homepage-arrow"></i>
+        Homepage
+      </a>
+    </div> -->
+      
+    <script src="./app.js"></script>
+    <!-- Slick slider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).on("load", function (e) {
+          var newWindowWidth = $(window).width();
+          if (newWindowWidth <= 675) {
+            $(".slider").slick("unslick");
+          }
+
+          if (newWindowWidth >= 675 && newWindowWidth <= 1025) {
+            $(".slider").slick({
+              dots: false,
+              infinite: true,
+              arrows: false,
+              speed: 100,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+            });
+          } else if (newWindowWidth >= 1025 && newWindowWidth <= 1200) {
+            $(".slider").slick({
+              dots: false,
+              infinite: true,
+              arrows: false,
+              speed: 100,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+            });
+          } else if (newWindowWidth > 1200) {
+            $(".slider").slick({
+              dots: false,
+              infinite: true,
+              arrows: false,
+              speed: 100,
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              infinite: true,
+            });
+          }
+        });
+
+        $(window).on("resize", function (e) {
+          var newWindowWidth = $(window).width();
+          if (newWindowWidth < 675) {
+            $(".slider").slick("unslick");
+          }
+
+          if (newWindowWidth >= 675 && newWindowWidth <= 1025) {
+            $(".slider").slick("unslick");
+            $(".slider").slick({
+              dots: false,
+              infinite: true,
+              arrows: true,
+              speed: 100,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+            });
+          } else if (newWindowWidth >= 1025 && newWindowWidth <= 1200) {
+            $(".slider").slick("unslick");
+            $(".slider").slick({
+              dots: false,
+              infinite: true,
+              arrows: false,
+              speed: 100,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+            });
+          } else if (newWindowWidth > 1200) {
+            $(".slider").slick("unslick");
+            $(".slider").slick({
+              dots: false,
+              infinite: true,
+              arrows: false,
+              speed: 100,
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              infinite: true,
+            });
+          }
+        });
+      });
+    </script>
+    <!-- Slick slider -->
+  </body>
+</html>

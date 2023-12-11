@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./blog.css" />
+
+    <title>Tui Lucking Blog</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h1 class="nav-header">
+          <span id="nav-header--name-style">Tui Lucking's</span>
+          <br />
+          <span id="blog-title-adjust">design blog</span>
+        </h1>
+
+        <!-- <ul class="nav-links">
+          <li class="nav-link">
+            <a href="./portfolio.html" class="portfolio-redirect nav-redirect"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-link">
+            <a href="./about.html" class="nav-redirect">About Me</a>
+          </li>
+          <li class="nav-link">
+            <a href="./blog.html" class="nav-redirect" id="nav-highlight"
+              >Blog</a
+            >
+          </li>
+        </ul> -->
+      </div>
+    </nav>
+
+    <main>
+      <section class="blog-section blog-wrap">
+        <div class="owl-carousel owl-theme blog-slider">
+          <a href="./entry/metamorphosis.html">
+            <article class="blog-link item">
+              <div class="blog-cover">
+                <img
+                  src="/images/blog-cover-1.png"
+                  alt=""
+                  class="blog-cover-img"
+                />
+              </div>
+              <h2 class="blog-title">
+                Observations of a novice designer in 2023; Metamorphosis.
+              </h2>
+              <div class="blog-info">
+                <div class="blog-info-center">
+                  <p class="blog-number">1/</p>
+                  <p class="blog-card-date">
+                    16 September <br />
+                    2023
+                  </p>
+                  <p class="blog-reading-time">2-3 min. reading</p>
+                </div>
+              </div>
+            </article>
+          </a>
+
+          <article class="blog-link item">
+            <div class="blog-cover">
+              <img
+                src="/images/blog-cover-2.png"
+                alt=""
+                class="blog-cover-img"
+              />
+            </div>
+            <h2 class="blog-title">Are you a natural? Does it matter?</h2>
+            <div class="blog-info">
+              <div class="blog-info-center">
+                <p class="blog-number">2/</p>
+                <p class="blog-card-date">
+                  21 August <br />
+                  2023
+                </p>
+                <p class="blog-reading-time">2 min. reading</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-link item">
+            <div class="blog-cover">
+              <img
+                src="/images/blog-cover-3.png"
+                alt=""
+                class="blog-cover-img"
+              />
+            </div>
+            <h2 class="blog-title">
+              Predictions or wishful thinking? We'll see.
+            </h2>
+            <div class="blog-info">
+              <div class="blog-info-center">
+                <p class="blog-number">3/</p>
+                <p class="blog-card-date">
+                  30 September <br />
+                  2023
+                </p>
+                <p class="blog-reading-time">3 min. reading</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="homepage-btn-container hbc-blog">
+        <a href="../index.html" class="homepage-btn">
+          <i class="fa-solid fa-arrow-left-long homepage-arrow"></i>
+          <p>Homepage</p>
+        </a>
+      </div>
+    </main>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: false,
+      margin: 50,
+      navText: [
+        "<div class='nav-btn prev-slide'></div>",
+        "<div class='nav-btn next-slide'></div>",
+      ],
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        650: {
+          items: 2,
+        },
+        1150: {
+          items: 3,
+        },
+      },
+    });
+  </script>
+</html>
