@@ -1,0 +1,21 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.sum-news-img {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+@media (width > 650px) {
+  .sum-news-imgs-cont {
+    max-width: 80%;
+    margin: auto;
+  }
+}

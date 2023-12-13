@@ -47,6 +47,8 @@ html {
 
 body {
   color: var(--header-color);
+  color: #423b54;
+  width: 100%;
   max-width: 360px;
   margin: auto;
 }
@@ -103,6 +105,7 @@ footer {
   line-height: 2.8rem;
   font-family: var(--ff-bold);
   position: relative;
+  color: #423b54;
 }
 
 .section-arrow {
@@ -139,6 +142,7 @@ nav {
   position: relative;
   line-height: 2.4rem;
   font-family: var(--ff-bold);
+  color: #423b54;
 }
 
 .nav-arrow,
@@ -293,10 +297,7 @@ nav {
   font-size: 0.93rem;
   margin-bottom: 2rem;
   line-height: 17px;
-}
-
-.about-info > p:not(.about-2-title-number) {
-  font-family: var(--ff-light);
+  font-family: var(--ff-roman);
 }
 
 .about-2 {
@@ -331,6 +332,7 @@ nav {
   line-height: 15px;
   font-size: 0.687rem;
   color: rgba(95, 97, 112, 1);
+  font-family: var(--ff-roman);
 }
 
 /* 4. Resume */
@@ -381,7 +383,7 @@ p {
   font-size: 0.82rem;
   line-height: 1.1rem;
   color: rgba(95, 97, 112, 1);
-  font-family: var(--ff-light);
+  font-family: var(--ff-roman);
   margin-block: 0.3rem;
 }
 
@@ -432,14 +434,38 @@ p {
 }
 
 /* 5. Contact */
-.contact-arrow {
-  margin-top: -2rem;
-}
-
 footer {
   margin-bottom: 4rem;
   color: #484453;
   margin-top: 80px;
+}
+
+.contact-section {
+  padding-top: 1rem;
+  position: relative;
+  min-height: 90vh;
+  max-height: 100vh;
+  height: 90vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.contact-header {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  text-transform: none;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.contact-arrow {
+  margin-top: -0.7rem;
+  top: 3.5rem;
+  left: 0;
+  transform: rotate(-20deg);
+  width: 5rem;
+  height: 5rem;
 }
 
 .contact-title {
@@ -447,9 +473,9 @@ footer {
 }
 
 .contact-details {
+  margin: 0;
   width: max-content;
-  margin-left: auto;
-  margin-right: 1.1rem;
+  margin-top: -4rem;
 }
 
 .social-media-icons > span > a {
@@ -459,7 +485,8 @@ footer {
 
 .email-address,
 .telephone-number {
-  font-family: var(--ff-roman);
+  font-family: var(--ff-regular);
+
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1rem;
@@ -473,18 +500,11 @@ footer {
 
 .telephone-number {
   margin-top: 0.5rem;
+  line-height: 1.3rem;
 }
 
 .footer-img-container {
   display: none;
-}
-
-.homepage-btn-container {
-  margin-top: 80px;
-  max-width: 360px;
-  margin-inline: 36px;
-  overflow: clip;
-  margin-bottom: 3rem;
 }
 
 .ext-btn {
@@ -500,6 +520,7 @@ footer {
   text-transform: capitalize;
   border-radius: 15px;
   color: #484453;
+  color: #423b54;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -554,11 +575,6 @@ footer {
     width: 620px;
     margin-inline: auto;
     padding-inline: 10px;
-  }
-
-  .homepage-btn-container {
-    max-width: 620px;
-    width: 620px;
   }
 
   .nav-header {
@@ -623,8 +639,7 @@ footer {
     max-width: 250px;
     width: 240px;
     font-size: 1.15rem;
-    line-height: 27px;
-    font-family: var(--ff-light);
+    line-height: 28.5px;
   }
 
   .about-2-title-number {
@@ -680,9 +695,21 @@ footer {
     margin-left: 3rem;
   }
 
+  .ed-skills-info-title {
+    margin: 0;
+  }
+
+  .ed-skills-info-subtitle {
+    margin: 0;
+  }
+
   .ed-skills-info > p {
     font-size: 1rem;
     line-height: 22px;
+  }
+
+  .ed-skills-info-item > br {
+    display: none;
   }
 
   .timeline {
@@ -703,6 +730,7 @@ footer {
     max-width: 630px;
     grid-template-columns: 35% 35% 15%;
     margin-bottom: 3.7rem;
+    gap: 3%;
   }
 
   .timeline-entry-date,
@@ -712,20 +740,40 @@ footer {
     font-size: 1rem;
   }
 
+  .job-info-title {
+    font-family: var(--ff-roman);
+  }
+
   .timeline-entry-date {
     text-align: right;
     margin-right: 2rem;
   }
 
   /* 5. Contact */
+  .contact-section {
+    display: flex;
+    flex-flow: column;
+    width: max-content;
+    max-width: max-content;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+  }
+
+  .contact-header {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    width: max-content;
+  }
 
   .contact-arrow {
-    margin-left: -9.5rem;
-    margin-top: 3.5rem;
+    margin-top: 4rem;
+    margin-left: -15.5rem;
   }
 
   .contact-details {
     margin-left: 5.3rem;
+    margin-left: 0;
     margin-top: 1rem;
   }
 
@@ -738,7 +786,12 @@ footer {
 
   .email-address,
   .telephone-number {
-    font-size: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .sum-news-img {
+    margin: auto;
+    max-width: 80%;
   }
 }
 
@@ -762,7 +815,6 @@ footer {
   /* 1.Navbar / 2. Cards */
   nav,
   .cards-section,
-  .contact-section,
   .about-section,
   .resume-section {
     max-width: 955px;
@@ -823,12 +875,16 @@ footer {
     font-size: 1rem;
   }
 
+  .place-of-study {
+    font-family: var(--ff-regular);
+  }
+
   .timeline {
     margin: 0;
   }
 
   .timeline-container {
-    background-size: 31% 100%;
+    background-size: 30.5% 100%;
     background-position: 0% 100%;
   }
 
@@ -847,8 +903,7 @@ footer {
 
   /* 3. About */
   .about-section,
-  .resume-section,
-  .contact-section {
+  .resume-section {
     max-width: 705px;
     width: 705px;
     margin-left: 26%;
