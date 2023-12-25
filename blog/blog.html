@@ -27,26 +27,26 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./blog.css?r=13122023" />
+    <link rel="stylesheet" href="./blog.css?r=25122023" />
 
     <title>Tui Lucking Blog</title>
   </head>
   <body>
+    <!-- 1. Navbar -->
     <nav>
       <div class="nav-center">
         <h1 class="nav-header">
-          <span id="nav-header--name-style">Tui Lucking's</span>
-          <br />
-          <span id="blog-title-adjust">design blog</span>
+          <span class="nav-header-style">Tui Lucking's </span>design blog
         </h1>
       </div>
     </nav>
 
     <main>
-      <section class="blog-section blog-wrap">
-        <div class="owl-carousel owl-theme blog-slider">
+      <!-- 2. Blog section -->
+      <section class="blog-section">
+        <div class="owl-carousel owl-theme">
           <a href="./entry/metamorphosis.html">
-            <article class="blog-link item">
+            <article class="blog-link">
               <div class="blog-cover">
                 <img
                   src="/images/blog-cover-1.png"
@@ -70,7 +70,7 @@
             </article>
           </a>
 
-          <article class="blog-link item">
+          <article class="blog-link">
             <div class="blog-cover">
               <img
                 src="/images/blog-cover-2.png"
@@ -91,7 +91,7 @@
             </div>
           </article>
 
-          <article class="blog-link item">
+          <article class="blog-link">
             <div class="blog-cover">
               <img
                 src="/images/blog-cover-3.png"
@@ -116,10 +116,10 @@
         </div>
       </section>
 
-      <div class="homepage-btn-container hbc-blog">
-        <a href="../index.html" class="homepage-btn ext-btn">
+      <div class="homepage-btn-container">
+        <a href="../index.html" class="ext-btn">
           <i class="fa-solid fa-arrow-left-long homepage-arrow"></i>
-          <p>Homepage</p>
+          <p class="btn-name">Homepage</p>
         </a>
       </div>
     </main>
@@ -142,7 +142,7 @@
   <script type="text/javascript">
     $(".owl-carousel").owlCarousel({
       loop: false,
-      margin: 50,
+      margin: 25,
       navText: [
         "<div class='nav-btn prev-slide'></div>",
         "<div class='nav-btn next-slide'></div>",
@@ -153,10 +153,10 @@
         0: {
           items: 1,
         },
-        650: {
+        700: {
           items: 2,
         },
-        1150: {
+        1050: {
           items: 3,
         },
       },

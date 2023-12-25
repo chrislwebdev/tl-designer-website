@@ -100,9 +100,9 @@ footer {
 }
 
 .section-header {
-  font-size: 3.1rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
-  line-height: 2.8rem;
+  line-height: 2.4rem;
   font-family: var(--ff-bold);
   position: relative;
   color: #423b54;
@@ -137,10 +137,10 @@ nav {
 }
 
 .nav-header {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
   position: relative;
-  line-height: 2.4rem;
+  line-height: 2.2rem;
   font-family: var(--ff-bold);
   color: #423b54;
 }
@@ -311,7 +311,8 @@ nav {
 .about-2-title-number {
   font-size: 2.37rem;
   position: absolute;
-  margin-left: 2.5rem;
+  /* margin-left: 2.1rem; */
+  margin-left: 10%;
   margin-top: -0.3rem;
   font-family: var(--ff-bold);
 }
@@ -355,7 +356,7 @@ nav {
   font-size: 1.875rem;
   position: absolute;
   width: 5rem;
-  top: -0.2rem;
+  top: -0.3rem;
   left: 0.5rem;
 }
 
@@ -365,7 +366,7 @@ p {
 }
 
 .ed-skills-info {
-  margin-left: 15%;
+  margin-left: 17%;
 }
 
 .ed-skills-info-title {
@@ -409,16 +410,17 @@ p {
 
 .timeline-entry {
   display: grid;
-  grid-template-columns: 30% 45% 15%;
+  grid-template-columns: 30% 45% 20%;
   gap: 5%;
   margin-bottom: 3rem;
   font-family: var(--ff-regular);
+  margin-left: 0.35rem;
 }
 
 .timeline-entry > div,
 p {
   font-family: var(--ff-regular);
-  font-size: 0.8rem;
+  font-size: 0.73rem;
 }
 
 .job-info-title {
@@ -523,10 +525,6 @@ footer {
   color: #423b54;
   font-weight: bold;
   font-size: 1rem;
-}
-
-.design-blog-btn {
-  display: none;
 }
 
 .homepage-arrow {
@@ -717,7 +715,7 @@ footer {
   }
 
   .timeline-container {
-    background-size: 32.3% 100%;
+    background-size: 33% 100%;
     background-position: 0% 100%;
   }
 
@@ -884,7 +882,7 @@ footer {
   }
 
   .timeline-container {
-    background-size: 30.5% 100%;
+    background-size: 31.5% 100%;
     background-position: 0% 100%;
   }
 

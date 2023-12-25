@@ -81,162 +81,53 @@ img {
 }
 
 main {
-  margin-top: 12.5rem;
+  margin-top: 10.5rem;
 }
 
-/* Navbar / Hero */
+/* 1. Navbar */
 nav {
-  margin-top: 3rem;
-}
-
-.homepage-nav {
-  margin-bottom: 5rem;
+  margin-top: 1.5rem;
 }
 
 .nav-center {
-  display: flex;
-  flex-direction: column;
-  max-width: max-content;
+  max-width: 350px;
   margin: auto;
-  max-width: 90%;
+  width: 85%;
 }
 
-.nav-header {
-  font-size: 2.45rem;
+.nav-header,
+.nav-header-blog {
+  font-size: 1.8rem;
   line-height: 50px;
   color: var(--font-col-dark-purp);
+  font-family: var(--ff-light);
 }
 
-#nav-header--name-style {
+.nav-header-style,
+.nav-header-style-blog {
   font-family: var(--ff-stylized);
   color: var(--font-col-grey);
   font-weight: 400;
-  font-size: 2.7rem;
+  font-size: 2rem;
 }
 
-.nav-links {
-  display: inherit;
-  justify-content: flex-end;
-  margin-top: 1rem;
-  gap: 1.5rem;
-}
-
-.nav-link {
-  position: relative;
-}
-
-.nav-redirect {
-  opacity: 0.5;
-}
-
-#nav-highlight {
-  opacity: 0.9;
-}
-
-.nav-link:hover::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: -5%;
-  height: 6px;
-  width: 110%;
-  background: var(--style-col-1);
-  border-radius: 10px;
-}
-
-.timeline-entry > div,
-p {
-  font-family: var(--ff-regular);
-  font-size: 0.8rem;
-}
-
-/* Blog page */
+/* 2. Blog section */
 .blog-section {
-  position: relative;
-  /* margin-top: -10rem; */
-  margin-bottom: 5rem;
-}
-
-#blog-title-adjust {
-  font-family: var(--ff-light);
+  max-width: 350px;
+  margin: auto;
+  width: 85%;
+  margin-top: -9rem;
 }
 
 .blog-link {
   margin: auto;
-  margin-right: 2rem;
   padding: 24px;
   border: 1.2px solid #484453;
   margin-bottom: 18px;
-}
-
-.item {
-  width: 100%;
-  margin-right: 2rem;
-}
-
-.card-container {
-  padding: 24px;
-  border-radius: 5px;
-  border: 1.2px solid #484453;
-  margin-bottom: 18px;
-  max-width: 300px;
-}
-
-.card-container > * {
-  margin-bottom: 16px;
-}
-
-.owl-carousel {
-  max-width: 90%;
-  margin: auto;
-  margin-top: -9rem;
-}
-
-.owl-prev {
-  position: absolute;
-  left: 0;
-  top: 30%;
-  height: 0px;
-  width: 50px;
-}
-
-.owl-next {
-  position: absolute;
-  right: 0;
-  width: 50px;
-  top: 30%;
-  height: 100px;
-  height: 0px;
-}
-
-.nav-btn {
-  position: absolute;
-  cursor: pointer;
-  height: 60px;
-  width: 60px;
-  top: 37px;
-  background-size: 30%;
-}
-
-.next-slide {
-  background: url(/images/next-chevron.png);
-  background-size: 35%;
-  background-position: -0% 0%;
-  background-repeat: no-repeat;
-  right: 0%;
-  /* background: pink; */
-}
-
-.prev-slide {
-  background: url(/images/prev-chevron.png);
-  background-size: 35%;
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
-  left: 65%;
 }
 
 .blog-cover {
-  height: 23rem;
+  height: 17rem;
   background-size: contain;
   background-position: center;
   position: relative;
@@ -249,10 +140,47 @@ p {
   z-index: -5;
 }
 
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 30%;
+  width: 50px;
+  height: 0px;
+}
+
+.owl-prev {
+  left: 0;
+}
+
+.owl-next {
+  right: 0;
+}
+
+.nav-btn {
+  position: absolute;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+}
+
+.next-slide {
+  background: url(/images/next-chevron.png);
+  right: 0%;
+}
+
+.prev-slide {
+  background: url(/images/prev-chevron.png);
+  right: -100%;
+}
+
+.next-slide,
+.prev-slide {
+  background-repeat: no-repeat;
+  background-size: 35%;
+}
+
 .blog-title {
   font-size: 1.3rem;
-  top: 0;
-  left: 0;
   padding-block: 0.5rem;
   letter-spacing: 0.3px;
   min-height: 6rem;
@@ -266,16 +194,13 @@ p {
 
 .blog-info-center {
   display: flex;
-  width: 100%;
-  align-items: flex-start;
   gap: 0.5rem;
-  height: fit-content;
   padding: 0.5rem 0.7rem;
 }
 
-.blog-reading-time {
-  margin-left: auto;
-  text-align: right;
+.blog-info-center > * {
+  font-family: var(--ff-regular);
+  font-size: 0.8rem;
 }
 
 .blog-number {
@@ -283,71 +208,55 @@ p {
   line-height: 2.4rem;
 }
 
-.blog-date {
-  font-size: 1rem;
-  width: 6.5rem;
-}
-
 .blog-card-date {
   font-size: 0.9rem;
-  width: 6.5rem;
+  width: 7rem;
 }
 
-.blog-date {
-  margin-top: 0.5rem;
-}
-.blog-navigation-buttons {
-  position: absolute;
-  top: 0;
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  padding-inline: 2rem;
-  top: 50%;
-  z-index: 15;
+.blog-reading-time {
+  margin-left: auto;
+  text-align: right;
 }
 
 .homepage-btn-container {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 5rem;
+  max-width: 350px;
+  margin: 2.5rem auto;
+  width: 85%;
 }
 
 .ext-btn {
-  align-self: flex-start;
-  display: flex;
-  align-items: center;
-  width: max-content;
   background: #fddba9;
   height: 37px;
-  padding-inline: 26px;
   border: 1.2px solid #484453;
-  font-family: var(--ff-regular);
-  text-transform: capitalize;
   border-radius: 15px;
-  color: #484453;
   color: #423b54;
   font-weight: bold;
-  font-size: 1rem;
-}
-
-.homepage-btn {
-  background: #fddfb2;
   padding: 0.5rem 0.75rem;
+  display: inline;
+  font-family: var(--ff-regular);
+  font-weight: bold;
 }
 
-.homepage-btn > * {
+.ext-btn > * {
   font-size: 0.9rem;
   display: inline;
+}
+
+.btn-name {
+  font-family: var(--ff-regular);
 }
 
 .homepage-arrow {
   margin-right: 0.5rem;
 }
 
-/* Blog */
+/* 3. Blog page */
+.blog-main {
+  margin-top: 2rem;
+}
 
-.blog-article {
+.blog-article,
+.nav-center-blog {
   width: 90%;
   max-width: 1280px;
   margin: auto;
@@ -367,8 +276,14 @@ p {
   color: #484453;
 }
 
+.blog-date-reading > p {
+  font-family: var(--ff-regular);
+}
+
 .blog-date {
-  width: 5rem;
+  font-size: 1rem;
+  width: 6.5rem;
+  margin-top: 0.5rem;
 }
 
 .blog-header {
@@ -389,11 +304,12 @@ p {
 
 .blog-paragraph {
   font-family: var(--ff-roman);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   margin-bottom: 1.5rem;
   max-width: 100%;
   margin-inline: auto;
   letter-spacing: 0.2px;
+  line-height: 1.4rem;
 }
 
 .blog-subheader {
@@ -402,26 +318,43 @@ p {
   color: #454262;
 }
 
-.blog-main {
-  margin-top: 4rem;
-}
-
-.blog-nav {
-  margin-top: 3rem;
-}
-
 .blog-btn-container {
   width: 90%;
-  margin-top: 3rem;
+  margin: 3rem auto;
 }
 
-.blog-home-link {
-  width: max-content;
+@media (width > 700px) {
+  .homepage-btn-container,
+  .blog-section,
+  .nav-center {
+    width: 85%;
+    max-width: 700px;
+  }
+
+  /* 2. Blog section */
+  .blog-cover {
+    height: 17rem;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+  }
 }
 
-@media (width > 800px) {
-  body {
+@media (width > 900px) {
+  /* 3. Blog page */
+  .nav-header-blog {
+    font-size: 2rem;
+  }
+
+  .nav-header-style-blog {
+    font-size: 2.2rem;
+  }
+
+  .blog-article,
+  .nav-center-blog {
+    width: 80%;
     max-width: 1280px;
+    margin: auto;
   }
 
   .blog-align {
@@ -429,7 +362,6 @@ p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     gap: 2rem;
-    width: 95%;
     max-width: 1300px;
     margin: auto;
   }
@@ -442,7 +374,6 @@ p {
 
   .blog-date {
     font-size: 1.05rem;
-    width: 7rem;
   }
 
   .blog-reading {
@@ -454,7 +385,6 @@ p {
     grid-column: 2/3;
     grid-row: 2/3;
     font-size: 3rem;
-    width: 95%;
     margin-left: 2rem;
     line-height: 3.5rem;
   }
@@ -472,7 +402,6 @@ p {
   }
 
   .blog-paragraph {
-    max-width: 95%;
     margin-inline: auto;
     font-size: 1.1rem;
     line-height: 1.6rem;
@@ -482,52 +411,28 @@ p {
   .blog-subheader {
     font-size: 1rem;
     margin-bottom: 0.4rem;
-    max-width: 95%;
     margin-inline: auto;
   }
 
   .blog-btn-container {
-    max-width: 86%;
-    width: 86%;
     margin-top: 3rem;
-  }
-
-  .homepage-btn-container {
-    width: 85%;
+    width: 80%;
   }
 }
 
-@media (min-width: 900px) {
-  /* Navbar / Hero */
+@media (min-width: 1050px) {
+  .nav-center,
+  .blog-section,
+  .homepage-btn-container {
+    max-width: 950px;
+  }
+
   .nav-header {
-    font-size: 3rem;
+    font-size: 2rem;
     width: max-content;
   }
 
-  #nav-header--name-style {
-    font-size: 3rem;
-  }
-
-  #nav-header--page-break-2 {
-    display: inline-block;
-  }
-
-  .nav-center {
-    width: 85%;
-    max-width: 1300px;
-    margin: auto;
-    padding: 0;
-    max-width: 85%;
-  }
-
-  .owl-carousel {
-    width: 85%;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .blog-header {
-    font-size: 3.4rem;
-    line-height: 3.8rem;
+  .nav-header-style {
+    font-size: 2.2rem;
   }
 }
