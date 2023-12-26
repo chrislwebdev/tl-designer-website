@@ -396,12 +396,10 @@
     ></script>
 
     <script type="text/javascript">
-      $(document).ready(function () {
-        $(window).on("load", function (e) {
+  
+
+         $(window).on("load", function () {
           var newWindowWidth = $(window).width();
-          if (newWindowWidth <= 675) {
-            $(".slider").slick("unslick");
-          }
 
           if (newWindowWidth >= 675 && newWindowWidth <= 1025) {
             $(".slider").slick({
@@ -433,8 +431,12 @@
               slidesToScroll: 1,
               infinite: true,
             });
+          }  else {
+             $(".slider").unslick("slick");
           }
+
         });
+
 
         $(window).on("resize", function (e) {
           var newWindowWidth = $(window).width();
@@ -477,7 +479,7 @@
             });
           }
         });
-      });
+ 
     </script>
     <!-- Slick slider -->
   </body>
